@@ -1,0 +1,21 @@
+{
+    "name": "rafaelbernard/blog-php-80-new-initializers",
+    "autoload": {
+        "psr-4": {
+            "Blog\\": "src/"
+        },
+        "files": [
+            "config/config.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Rafael Araujo",
+            "email": "rafael@bernard-araujo.com"
+        }
+    ],
+    "require": {
+        "doctrine/dbal": "^3.2",
+        "fakerphp/faker": "^1.17"
+    }
+}
