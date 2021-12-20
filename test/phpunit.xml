@@ -2,7 +2,7 @@
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" backupGlobals="false" backupStaticAttributes="false"
          bootstrap="Bootstrap.php" colors="true" convertErrorsToExceptions="true" convertNoticesToExceptions="true"
          convertWarningsToExceptions="true" processIsolation="false" stopOnFailure="false"
-         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.5/phpunit.xsd">
     <coverage processUncoveredFiles="true">
         <include>
             <directory suffix=".php">../src</directory>
@@ -19,9 +19,6 @@
             <directory suffix="Test.php">./Integration</directory>
         </testsuite>
     </testsuites>
-    <!--    <listeners>-->
-    <!--        <listener class="NunoMaduro\Collision\Adapters\Phpunit\Listener" />-->
-    <!--    </listeners>-->
     <php>
         <env name="APP_ENV" value="testing"/>
         <env name="BCRYPT_ROUNDS" value="4"/>
