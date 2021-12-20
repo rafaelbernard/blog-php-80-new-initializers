@@ -1,0 +1,32 @@
+{
+    "name": "rafaelbernard/blog-php-80-new-initializers",
+    "autoload": {
+        "psr-4": {
+            "Blog\\": "src/"
+        },
+        "files": [
+            "config/config.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "test/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rafael Araujo",
+            "email": "rafael@bernard-araujo.com"
+        }
+    ],
+    "require": {
+        "doctrine/dbal": "^3.2",
+        "fakerphp/faker": "^1.17"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit -c test/phpunit.xml"
+    }
+}
