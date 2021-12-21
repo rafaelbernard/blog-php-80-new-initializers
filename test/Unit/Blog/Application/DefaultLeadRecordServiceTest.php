@@ -29,8 +29,6 @@ class DefaultLeadRecordServiceTest extends TestCase
 
     public function testCanAdd()
     {
-        $email = 'fake@email.com';
-
         $this->leadQueryServiceMock
             ->expects(self::once())
             ->method('getByEmail')
